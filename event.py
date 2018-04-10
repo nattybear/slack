@@ -1,8 +1,8 @@
 from bottle import post, request, run
 from sys import argv
 
-@post('/file_created')
-def file_created():
+@post('/event')
+def event():
 	print(request.json)
 	return 'It Works!'
 
